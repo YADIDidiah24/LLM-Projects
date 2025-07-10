@@ -1,4 +1,4 @@
-# JurisAI - A Legal Document Q&A Assistant
+# LexiQE AI - A Legal Document Q&A Assistant
 
 An intelligent AI-powered assistant that allows users to upload legal documents and interact with them through natural language queries. Built with cutting-edge NLP technologies including RAG (Retrieval-Augmented Generation), vector databases, and transformer models.
 
