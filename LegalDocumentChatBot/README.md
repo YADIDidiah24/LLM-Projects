@@ -52,9 +52,9 @@ Upload a legal document and start asking questions immediately!
    source venv/bin/activate  # On Windows: venv\Scripts\activate
    ```
 4. **Install dependencies**
-```
-    pip install -r requirements.txt
-```
+    ```
+        pip install -r requirements.txt
+    ```
 
 
 
