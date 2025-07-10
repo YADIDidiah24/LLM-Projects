@@ -76,18 +76,18 @@ Web Application (Recommended)
 
 📁 Project Structure
 
-```
-legal-document-qa/
-├── app.py                 # Main Streamlit application
-├── index.py              # Document indexing script
-├── main_chat.py          # CLI chat interface
-├── tools.py              # Core RAG functionality
-├── requirements.txt      # Python dependencies
-├── README.md            # This file
-├── .env                 # Environment variables (create if needed)
-└── rag_faiss/           # FAISS index storage (auto-created)
-
-```
+  ```
+  legal-document-qa/
+  ├── app.py                 # Main Streamlit application
+  ├── index.py              # Document indexing script
+  ├── main_chat.py          # CLI chat interface
+  ├── tools.py              # Core RAG functionality
+  ├── requirements.txt      # Python dependencies
+  ├── README.md            # This file
+  ├── .env                 # Environment variables (create if needed)
+  └── rag_faiss/           # FAISS index storage (auto-created)
+  
+  ```
 ## 🔄 How It Works
 
 1. **Document Processing**  
