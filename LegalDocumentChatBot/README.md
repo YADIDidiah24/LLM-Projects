@@ -7,10 +7,10 @@ A cutting-edge tool that allows users to upload legal documents and interactivel
 An intelligent AI-powered assistant that allows users to upload legal documents and interact with them through natural language queries. Built with cutting-edge NLP technologies including RAG (Retrieval-Augmented Generation), vector databases, and transformer models.
 🎯 Features
 
-📄 PDF Document Upload: Support for various legal document formats
-🔍 Intelligent Search: Semantic search through document content using FAISS vector database
-💬 Interactive Chat: Natural language Q&A interface with conversation history
-🧠 Context-Aware Responses: AI-powered answers based on document content
+- **📄 PDF Document Upload: Support for various legal document formats
+- **🔍 Intelligent Search: Semantic search through document content using FAISS vector database
+- **💬 Interactive Chat: Natural language Q&A interface with conversation history
+- **🧠 Context-Aware Responses: AI-powered answers based on document content
 ⚡ Real-Time Processing: Fast document indexing and query responses
 🎨 User-Friendly Interface: Clean, professional Streamlit web application
 🔒 Privacy-First: All processing happens locally - no data leaves your machine
