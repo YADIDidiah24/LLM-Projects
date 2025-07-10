@@ -1,0 +1,22 @@
+
+# Working Configuration Found!
+
+# Embedding Model
+EMBEDDING_MODEL = "sentence-transformers/all-MiniLM-L6-v2"
+
+# Text Generation Model  
+TEXT_MODEL = "distilgpt2"
+
+# Updated code snippet:
+from sentence_transformers import SentenceTransformer
+from transformers import pipeline
+
+# Initialize embeddings
+embeddings = SentenceTransformer(EMBEDDING_MODEL)
+
+# Initialize text generator
+text_generator = pipeline(
+    "text-generation" if "flan-t5" not in TEXT_MODEL else "text2text-generation",
+    model=TEXT_MODEL,
+    device=0 if torch.cuda.is_available() else -1
+)
