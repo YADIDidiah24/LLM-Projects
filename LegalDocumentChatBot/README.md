@@ -15,7 +15,8 @@ An intelligent AI-powered assistant that allows users to upload legal documents 
 
 ## 🚀 Demo
 
-![Demo Image](image_url)
+![1](https://github.com/user-attachments/assets/1ed0ee3c-6449-4320-80bd-022e7b51179c)
+
 
 Upload a legal document and start asking questions immediately!
 
