@@ -184,7 +184,7 @@ class PremiumBusinessPlanner:
         
     def setup_gemini(self):
         """Setup Gemini API"""
-        api_key =  "AIzaSyCkEZYIIQdYBBLfo3G-UJe1FoPNsa9eDAg"
+        api_key =  "AIzaSyCk..."
         genai.configure(api_key=api_key)
         
         generation_config = {
