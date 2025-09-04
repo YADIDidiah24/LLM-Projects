@@ -16,7 +16,7 @@ torch.backends.cudnn.benchmark = False  # Reduces memory usage
 if torch.cuda.is_available():
     torch.cuda.empty_cache()
 
-def read_whatsapp_chat(file_path: str) -> pd.DataFrame:
+def read_data(file_path: str) -> pd.DataFrame:
     # Define filtering patterns
     encryption_message = "Messages and calls are end-to-end encrypted. No one outside of this chat, not even WhatsApp, can read or listen to them. Tap to learn more."
     media_pattern = "<Media omitted>"
@@ -82,7 +82,7 @@ def read_whatsapp_chat(file_path: str) -> pd.DataFrame:
 
 all_chats = {}
 file_name = "DummyData.txt"
-all_chats[file_name] = read_whatsapp_chat(file_name)
+all_chats[file_name] = read_data(file_name)
 
 text_sequence = ""
 for file_name in all_chats.keys():
@@ -788,7 +788,7 @@ def train_model():
     print("Loading data...")
     all_chats = {}
     file_name = "DummyData.txt"
-    all_chats[file_name] = read_whatsapp_chat(file_name)
+    all_chats[file_name] = read_data(file_name)
     learning_rate = 3e-4
     # Combine text
     text_sequence = " ".join(all_chats[file_name]['message'].values)
@@ -1162,7 +1162,7 @@ class Config:
     # System
     device = 'cuda' if torch.cuda.is_available() else 'cpu'
 
-def read_whatsapp_chat(file_path: str) -> pd.DataFrame:
+def read_data(file_path: str) -> pd.DataFrame:
     """Parse WhatsApp chat export file."""
 
     # Define patterns for filtering
@@ -1551,7 +1551,7 @@ def generate_text(model, tokenizer, prompt: str, max_tokens: int = 100):
 # Example usage
 def main():
     # Read WhatsApp data
-    df = read_whatsapp_chat("DummyData.txt")
+    df = read_data("DummyData.txt")
     text_data = " ".join(df['message'].values)
 
     print(f"Loaded {len(text_data)} characters of text")
